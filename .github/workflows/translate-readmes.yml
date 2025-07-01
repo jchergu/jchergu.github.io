@@ -2,57 +2,88 @@ name: Translate README
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
 
 permissions:
-  contents: write  # Permessi di scrittura espliciti
+  contents: write
 
 jobs:
   translate_readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0  # Ottieni tutta la cronologia
-
+      - uses: actions/checkout@v2
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: 16.x
-
-      - name: Create docs directory
-        run: mkdir -p docs
-
-      # Traduzione Italiano
+      
+      # Traduci il README nelle varie lingue e salva in docs/
       - name: Translate to Italian
         uses: dephraiim/translate-readme@main
         with:
           LANG: it
-
-      - name: Move Italian README
-        run: mv README.it.md docs/
-
-      # Aggiungi altre lingue qui...
-
+          OUTPUT_PATH: docs/README.it.md
+      
+      - name: Translate to French
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: fr
+          OUTPUT_PATH: docs/README.fr.md
+      
+      - name: Translate to Spanish
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: es
+          OUTPUT_PATH: docs/README.es.md
+      
+      - name: Translate to German
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: de
+          OUTPUT_PATH: docs/README.de.md
+      
+      - name: Translate to Japanese
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: ja
+          OUTPUT_PATH: docs/README.ja.md
+      
+      - name: Translate to Chinese Simplified
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: zh-CN
+          OUTPUT_PATH: docs/README.zh-CN.md
+      
+      - name: Translate to Russian
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: ru
+          OUTPUT_PATH: docs/README.ru.md
+      
+      # Aggiorna i link delle bandiere nei README tradotti
+      - name: Update language links in translated READMEs
+        run: |
+          for lang in it fr es de ja zh-CN ru; do
+            file="docs/README.$lang.md"
+            if [ -f "$file" ]; then
+              # Sostituisci i percorsi dei link delle bandiere
+              sed -i 's|/README.md|/README.md|g' "$file"
+              sed -i "s|/docs/README.it.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.fr.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.es.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.de.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.ja.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.zh-CN.md|/docs/README.$lang.md|g" "$file"
+              sed -i "s|/docs/README.ru.md|/docs/README.$lang.md|g" "$file"
+            fi
+          done
+      
+      # Commit e push delle modifiche
       - name: Commit and push changes
         run: |
-          # Configura git
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # Pull degli ultimi cambiamenti prima di pushare
-          git pull origin ${{ github.ref }} --rebase
-          
-          # Aggiungi e commit
-          git add .
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-translate READMEs [skip ci]"
-            # Forza il push solo se necessario
-            git push origin HEAD:${{ github.ref }} || \
-            (git pull origin ${{ github.ref }} --rebase && \
-             git push origin HEAD:${{ github.ref }})
-          else
-            echo "No changes to commit"
-          fi
+          git add docs/README.*.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-translate READMEs" && git push --force)
