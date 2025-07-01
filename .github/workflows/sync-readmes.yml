@@ -23,6 +23,10 @@ jobs:
           cp README.md docs/README.es.md
           cp README.md docs/README.it.md
           cp README.md docs/README.fr.md
+          cp README.md docs/README.de.md
+          cp README.md docs/README.ru.md
+          cp README.md docs/README.zh-CN.md
+          cp README.md docs/README.ja.md
           
       # 3. Commit changes
       - name: Commit changes

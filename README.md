@@ -1,16 +1,23 @@
 <div align="center">
-  Language:
-  &nbsp;
-  [ <a title="English" href="/README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a> ]
-  &nbsp;
-  <a title="Italian" href="./docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
-  &nbsp;
-  <a title="French" href="./docs/README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
-  &nbsp;
-  <a title="Spanish" href="./docs/README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
-  &nbsp;
-  <br/>
-  <br/>
+    Language:
+    &nbsp;
+    <a title="English" href="/README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a>
+    &nbsp;
+    <a title="Italian" href="./docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
+    &nbsp;
+    <a title="French" href="./docs/README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
+    &nbsp;
+    <a title="Spanish" href="./docs/README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
+    &nbsp;
+    <a title="German" href="./docs/README.de.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/de.svg"></kbd></a> 
+    &nbsp;
+    <a title="Japanese" href="./docs/README.ja.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/jp.svg"></kbd></a> 
+    &nbsp;
+    <a title="Chinese" href="./docs/README.zh-CN.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/cn.svg"></kbd></a> 
+    &nbsp;
+    <a title="Russian" href="./docs/README.ru.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/ru.svg"></kbd></a>
+    <br/>
+    <br/>
 </div>
 
 # 🐒 Jacopo Chergui 🎸
