@@ -22,7 +22,7 @@
 
 # 🐒 Jacopo Chergui 🎸
 Jacopo Chergui is an italian computer engineer and musician, born to build solutions and good sounds.
-For all the infos about Jacopo, please check the [website](https://jacopochergui.github.io). 
+For all the infos about Jacopo, please check the  [website](https://jacopochergui.github.io). 
 
 ## 📚 Languages
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
