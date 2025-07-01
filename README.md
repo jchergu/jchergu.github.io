@@ -1,7 +1,7 @@
 <div align="center">
   Language:
   &nbsp;
-  [ <a title="English" href="./README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a> ]
+  [ <a title="English" href="/README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a> ]
   &nbsp;
   <a title="Italian" href="./docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
   &nbsp;
