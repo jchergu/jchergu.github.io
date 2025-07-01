@@ -3,11 +3,11 @@
   &nbsp;
   [ <a title="English" href="./README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a> ]
   &nbsp;
-  <a title="Italian" href="./README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
+  <a title="Italian" href="./docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
   &nbsp;
-  <a title="French" href="./README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
+  <a title="French" href="./docs/README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
   &nbsp;
-  <a title="Spanish" href="./README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
+  <a title="Spanish" href="./docs/README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
   &nbsp;
   <br/>
   <br/>
