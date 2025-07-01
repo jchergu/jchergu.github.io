@@ -24,3 +24,14 @@ Obviously, building a website is educational for me, but this doesn't explain wh
 Very simple: 
 - `README.md`
 - `index.html`
+  
+## July 2025
+  
+### The structure
+While studying Cloud Computing and Turkish language, I'm thinking of setting up the first structure:
+- `portfolio.html` to show my tech projects
+- `music.html` to show my music
+- `blog.html` because I have some things to tell to the world
+- `about.html` because it's cool
+
+But I'm still thinking about how to apply the CSS before doing disasters, there are many options... I've heard about tailwind css, but also figma. I have to inform better.
