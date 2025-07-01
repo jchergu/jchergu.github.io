@@ -15,6 +15,7 @@
 
 # Jacopo Chergui
 Jacopo Chergui is an italian computer engineer and musician, born to build solutions and good sounds.
+For all the infos about Jacopo, please check the [website](https://jacopochergui.github.io). 
 
 ## Languages
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
@@ -61,5 +62,3 @@ Jacopo Chergui is an italian computer engineer and musician, born to build solut
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jacopochergui/)
 [![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/artist/1NB1qz1n0S3IQPOEwP3g3A) 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gosuilgiallo)
-
-For all the infos about Jacopo, please check the [website](https://jacopochergui.github.io). 
