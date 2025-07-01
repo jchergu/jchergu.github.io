@@ -20,20 +20,20 @@ jobs:
       # 2. Copy
       - name: Copy content to other README files
         run: |
-          cp README.md docs/README.es.md
-          cp README.md docs/README.it.md
-          cp README.md docs/README.fr.md
-          cp README.md docs/README.de.md
-          cp README.md docs/README.ru.md
-          cp README.md docs/README.zh-CN.md
-          cp README.md docs/README.ja.md
+          cp README.md ./README.es.md
+          cp README.md ./README.it.md
+          cp README.md ./README.fr.md
+          cp README.md ./README.de.md
+          cp README.md ./README.ru.md
+          cp README.md ./README.zh-CN.md
+          cp README.md ./README.ja.md
           
       # 3. Commit changes
       - name: Commit changes
         run: |
           git config --local user.name "GitHub Actions Bot"
           git config --local user.email "actions@github.com"
-          git add docs/
+          git add .
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
