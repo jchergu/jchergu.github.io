@@ -1,21 +1,21 @@
 <div align="center">
     Language:
     &nbsp;
-    <a title="English" href="/README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a>
+    <a title="English" href="./README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a>
     &nbsp;
-    <a title="Italian" href="/docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
+    <a title="Italian" href="./README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
     &nbsp;
-    <a title="French" href="/docs/README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
+    <a title="French" href="./README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
     &nbsp;
-    <a title="Spanish" href="/docs/README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
+    <a title="Spanish" href="./README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
     &nbsp;
-    <a title="German" href="/docs/README.de.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/de.svg"></kbd></a> 
+    <a title="German" href="./README.de.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/de.svg"></kbd></a> 
     &nbsp;
-    <a title="Japanese" href="/docs/README.ja.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/jp.svg"></kbd></a> 
+    <a title="Japanese" href="./README.ja.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/jp.svg"></kbd></a> 
     &nbsp;
-    <a title="Chinese" href="/docs/README.zh-CN.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/cn.svg"></kbd></a> 
+    <a title="Chinese" href="./README.zh-CN.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/cn.svg"></kbd></a> 
     &nbsp;
-    <a title="Russian" href="/docs/README.ru.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/ru.svg"></kbd></a>
+    <a title="Russian" href="./README.ru.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/ru.svg"></kbd></a>
     <br/>
     <br/>
 </div>
@@ -23,7 +23,7 @@
 # 🐒 Jacopo Chergui 🎸
 
 Jacopo Chergui è un ingegnere informatico e musicista italiano, nato per costruire soluzioni e buoni suoni.
-Per tutte le informazioni su Jacopo, controlla il[sito web](https://jacopochergui.github.io).
+Per tutte le informazioni su Jacopo, controlla il[sito web](https://jacopochergui.github.io). 
 
 ## 📚 Lingue
 
@@ -39,4 +39,6 @@ Per tutte le informazioni su Jacopo, controlla il[sito web](https://jacopochergu
 
 ## 🚀 collegamenti sociali
 
-[![Instagram](https://img.shields.io/badge/Instagram-125688?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gosuilgiallo/)[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jacopochergui/)[![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/artist/1NB1qz1n0S3IQPOEwP3g3A)[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gosuilgiallo)
+[![Instagram](https://img.shields.io/badge/Instagram-125688?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gosuilgiallo/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jacopochergui/)[![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/artist/1NB1qz1n0S3IQPOEwP3g3A) 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gosuilgiallo)
