@@ -2,65 +2,57 @@ name: Translate README
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [ main, master ]
 
 permissions:
-  contents: write
+  contents: write  # Permessi di scrittura espliciti
 
 jobs:
   translate_readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-      
+          fetch-depth: 0  # Ottieni tutta la cronologia
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      
-      # Crea la cartella docs se non esiste
+
       - name: Create docs directory
         run: mkdir -p docs
-      
-      # Traduci e sposta i file
+
+      # Traduzione Italiano
       - name: Translate to Italian
         uses: dephraiim/translate-readme@main
         with:
           LANG: it
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Move Italian README
         run: mv README.it.md docs/
-      
-      # Ripeti per le altre lingue
-      - name: Translate to French
-        uses: dephraiim/translate-readme@main
-        with:
-          LANG: fr
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Move French README
-        run: mv README.fr.md docs/
-      
-      # Aggiungi qui le altre lingue necessarie...
-      
-      # Aggiorna i link delle bandiere
-      - name: Update language links
-        run: |
-          sed -i 's|/README.md|../README.md|g' docs/README.*.md
-          sed -i 's|/docs/README|./README|g' docs/README.*.md
-      
-      # Commit e push delle modifiche
+
+      # Aggiungi altre lingue qui...
+
       - name: Commit and push changes
         run: |
+          # Configura git
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          
+          # Pull degli ultimi cambiamenti prima di pushare
+          git pull origin ${{ github.ref }} --rebase
+          
+          # Aggiungi e commit
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-translate READMEs" && git push)
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Auto-translate READMEs [skip ci]"
+            # Forza il push solo se necessario
+            git push origin HEAD:${{ github.ref }} || \
+            (git pull origin ${{ github.ref }} --rebase && \
+             git push origin HEAD:${{ github.ref }})
+          else
+            echo "No changes to commit"
+          fi
