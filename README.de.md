@@ -1,21 +1,21 @@
 <div align="center">
     Language:
     &nbsp;
-    <a title="English" href="/README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a>
+    <a title="English" href="./README.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/gb.svg"></kbd></a>
     &nbsp;
-    <a title="Italian" href="/docs/README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
+    <a title="Italian" href="./README.it.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/it.svg"></kbd></a> 
     &nbsp;
-    <a title="French" href="/docs/README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
+    <a title="French" href="./README.fr.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/fr.svg"></kbd></a> 
     &nbsp;
-    <a title="Spanish" href="/docs/README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
+    <a title="Spanish" href="./README.es.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/es.svg"></kbd></a> 
     &nbsp;
-    <a title="German" href="/docs/README.de.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/de.svg"></kbd></a> 
+    <a title="German" href="./README.de.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/de.svg"></kbd></a> 
     &nbsp;
-    <a title="Japanese" href="/docs/README.ja.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/jp.svg"></kbd></a> 
+    <a title="Japanese" href="./README.ja.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/jp.svg"></kbd></a> 
     &nbsp;
-    <a title="Chinese" href="/docs/README.zh-CN.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/cn.svg"></kbd></a> 
+    <a title="Chinese" href="./README.zh-CN.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/cn.svg"></kbd></a> 
     &nbsp;
-    <a title="Russian" href="/docs/README.ru.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/ru.svg"></kbd></a>
+    <a title="Russian" href="./README.ru.md"><kbd><img width="20px" src="https://flagicons.lipis.dev/flags/4x3/ru.svg"></kbd></a>
     <br/>
     <br/>
 </div>
@@ -31,7 +31,8 @@ Für alle Infos über Jacopo überprüfen Sie bitte die[Webseite](https://jacopo
 
 ## 🎛️ Tools & Frameworks
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)![CUDA](https://img.shields.io/badge/CUDA-0768A2?style=for-the-badge&logo=nvidia&logoColor=white)![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)![Intel](https://img.shields.io/badge/Intel-0071C5?style=for-the-badge&logo=intel&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)![CUDA](https://img.shields.io/badge/CUDA-0768A2?style=for-the-badge&logo=nvidia&logoColor=white)![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)![Intel](https://img.shields.io/badge/Intel-0071C5?style=for-the-badge&logo=intel&logoColor=white)
 
 ## 💻 Plattformen
 
