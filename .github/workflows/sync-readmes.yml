@@ -1,0 +1,30 @@
+name: Sync README files
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # 2. Copy
+      - name: Copy content to other README files
+        run: |
+          cp README.md README.es.md
+          cp README.md README.fr.md
+          cp README.md README.it.md
+
+      # 3. Commit
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add README-es.md README-fr.md README-it.md
+          git commit -m "Sync README files with updates"
+          git push

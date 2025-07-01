@@ -55,4 +55,11 @@ Jacopo Chergui is an italian computer engineer and musician, born to build solut
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
+
+## 🚀 Social Links
+[![Instagram](https://img.shields.io/badge/Instagram-125688?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gosuilgiallo/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jacopochergui/)
+[![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/artist/1NB1qz1n0S3IQPOEwP3g3A) 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gosuilgiallo)
+
 For all the infos about Jacopo, please check the [website](https://jacopochergui.github.io). 
