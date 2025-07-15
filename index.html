@@ -1,14 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Jacopo Chergui</title>
-  <title>Scimmietta Game</title>
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.js"></script>
-  <style>body { margin: 0; }</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - jchergu</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <script src="game.js"></script>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- 🔷 Topbar -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-xl font-bold">Jacopo Chergui</div>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+        <li><a href="portfolio.html" class="hover:text-blue-500">Portfolio</a></li>
+        <li><a href="music.html" class="hover:text-blue-500">Music</a></li>
+        <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
+        <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔷 Hero Section -->
+  <main class="container mx-auto p-8">
+    <section class="flex flex-col md:flex-row items-center gap-8">
+      <!-- TESTO -->
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl font-bold mb-4">Hello, I'm Jacopo 🎸</h1> 
+        <h2 class="text-2xl mb-2">Italian-Moroccan Computer Engineer & Musician</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          Making systems work and sound good. <br>
+          In this website, you can find my music, my tech projects, and some stupid ideas.
+        </p>
+
+        <!-- BOTTONI SOCIAL -->
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
+          <!-- Instagram -->
+          <a href="https://instagram.com/gosu.ilgiallo" target="_blank"
+            class="hover:opacity-80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                alt="Instagram" class="w-8 h-8">
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/jchergu" target="_blank"
+            class="hover:opacity-80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                alt="GitHub" class="w-8 h-8">
+          </a>
+
+          <!-- Spotify -->
+          <a href="https://open.spotify.com/artist/5cOLW8HHCoGEP23cejkBZE?si=GGEyZ5-zQ0mUx3nijleZag" target="_blank"
+            class="hover:opacity-80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spotify.svg"
+                alt="Spotify" class="w-8 h-8">
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/jacopo-chergui-7202b0292/" target="_blank"
+            class="hover:opacity-80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                alt="LinkedIn" class="w-8 h-8">
+          </a>
+          </div>
+</div>
+
+
+      </div>
+
+      <!-- FOTO -->
+      <div class="flex justify-center md:w-1/3">
+        <img src="assets/website/jacopo-home.jpeg"
+            alt="Foto di Jacopo"
+            class="rounded shadow w-full max-w-xs md:max-w-sm h-auto">
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
-
