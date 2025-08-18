@@ -35,3 +35,9 @@ While studying Cloud Computing and Turkish language, I'm thinking of setting up 
 - `about.html` because it's cool
 
 But I'm still thinking about how to apply the CSS before doing disasters, there are many options... I've heard about tailwind css, but also figma. I have to inform better.
+
+
+## August 2025
+
+### After the holidays
+In this period, I've learned a little bit about Tailwind CSS and used it in `index.html`. My decision is to first decide some style of the home page and then complete the other sections: music, portfolio, blog, about.
