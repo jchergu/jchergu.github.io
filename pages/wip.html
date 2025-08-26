@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work in Progress</title>
+<link href="../dist/output.css" rel="stylesheet">
+<script src="../assets/js/theme.js"></script>
+<style>
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+  }
+  
+  @keyframes typing-first {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes typing-second {
+    0% { 
+      width: 0;
+      opacity: 0;
+    }
+    1% { 
+      opacity: 1;
+    }
+    100% { 
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  .bounce-animation {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+  
+  .glow-animation {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .typing-text-first {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .typing-text-second {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 0;
+    padding-bottom: 0.5em; 
+    margin-bottom: 1em; 
+    animation: typing-second 2s steps(20, end) 1s forwards;
+  }
+
+  .typing-text-second::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%; 
+    width: 3px;
+    background-color: currentColor;
+    animation: blink-caret 0.75s step-end infinite;
+    margin-right: -4px; 
+  }
+
+  @keyframes blink-caret {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 min-h-screen">
+  
+  <!-- 🔷 Topbar -->
+  <header class="bg-white dark:bg-gray-800 shadow transition-colors duration-300">
+    <nav class="container mx-auto px-4 flex justify-center md:justify-between items-center p-4 overflow-x-auto">
+      <ul class="flex gap-4 md:gap-6 text-sm md:text-base items-center"> 
+        <li>
+          <a href="../index.html" class="transition-transform hover:scale-110 inline-flex items-center"> 
+            <img src="../assets/images/ape-break.png" alt="Home" class="w-8 h-8 rounded-full object-cover">
+          </a>
+        </li>
+        <li><a href="../pages/wip.html" class="hover:text-blue-500 dark:hover:text-blue-400 whitespace-nowrap transition-colors inline-flex items-center">Portfolio💻</a></li>
+        <li><a href="../pages/wip.html" class="hover:text-blue-500 dark:hover:text-blue-400 whitespace-nowrap transition-colors inline-flex items-center">Music🎶</a></li>
+        <li><a href="../pages/wip.html" class="hover:text-blue-500 dark:hover:text-blue-400 whitespace-nowrap transition-colors inline-flex items-center">Blog📑</a></li>
+        <li><a href="../pages/wip.html" class="hover:text-blue-500 dark:hover:text-blue-400 whitespace-nowrap transition-colors inline-flex items-center">About❓</a></li>
+      </ul>
+      
+      <!-- Dark mode toggle (desktop) -->
+      <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200 hidden md:block ml-4">
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- 🔷 Main Content -->
+  <main class="container mx-auto p-8 flex flex-col items-center justify-center min-h-[80vh]">
+    
+    <!-- Bouncing monkey -->
+    <div class="bounce-animation mb-16"> 
+      <div class="relative">
+        <img src="../assets/images/ape-break.png" 
+             alt="Work in Progress Monkey" 
+             class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover shadow-2xl glow-animation">
+        <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse shadow-lg">
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Title -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-8 text-center typing-text-first">
+	    Oops!
+    </h1>
+    <br>
+    <div class="overflow-hidden py-4"> 
+      <h1 class="text-4xl md:text-6xl font-bold text-center typing-text-second">
+        Work in Progress...
+      </h1>
+    </div>
+    <br>
+
+    <!-- Subtitle -->
+    <div class="text-center mb-8 space-y-4 mt-12"> 
+      <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+        🚧 This page is still under construction 🚧
+      </p>
+      <br>
+      <p class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl">
+        I'm working on something cool, but still coding hard! <br>
+        Come back soon to see what I've been up to 🎸⚡
+      </p>
+    </div>
+    <br><br>
+
+    <!-- Social Icons -->
+    <div class="mb-8">
+      <p class="text-center text-gray-600 dark:text-gray-400 mb-4">
+        <br><br>
+        Meanwhile, follow me here! 👇
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <!-- Instagram -->
+        <a href="https://instagram.com/gosu.ilgiallo" target="_blank"
+          class="hover:opacity-80">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram" class="w-8 h-8 dark:invert">
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/jchergu" target="_blank"
+          class="hover:opacity-80">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+              alt="GitHub" class="w-8 h-8 dark:invert">
+        </a>
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/artist/5cOLW8HHCoGEP23cejkBZE?si=GGEyZ5-zQ0mUx3nijleZag" target="_blank"
+          class="hover:opacity-80">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spotify.svg"
+              alt="Spotify" class="w-8 h-8 dark:invert">
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jacopo-chergui-7202b0292/" target="_blank"
+          class="hover:opacity-80">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+              alt="LinkedIn" class="w-8 h-8 dark:invert">
+        </a>
+        <!-- Apple Music -->
+        <a href="https://music.apple.com/us/artist/gosu/1341481732" target="_blank"
+          class="hover:opacity-80">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/applemusic.svg"
+              alt="Apple Music" class="w-8 h-8 dark:invert">
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-gray-500 dark:text-gray-400 text-sm">
+    <p>Coming back soon with fresh content! 🐵✨</p>
+  </footer>
+
+  <!-- Mobile dark mode toggle -->
+  <button id="mobile-theme-toggle" class="md:hidden fixed bottom-6 right-6 p-3 rounded-full bg-blue-500 hover:bg-blue-600 text-white shadow-lg transition-all duration-300 z-50">
+    <svg id="mobile-theme-toggle-dark-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+    </svg>
+    <svg id="mobile-theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <script>
+    // Theme toggle functionality (same as index.html)
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const mobileThemeToggleBtn = document.getElementById('mobile-theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    const mobileDarkIcon = document.getElementById('mobile-theme-toggle-dark-icon');
+    const mobileLightIcon = document.getElementById('mobile-theme-toggle-light-icon');
+
+    // Check for saved theme or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    if (currentTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+      darkIcon.classList.add('hidden');
+      lightIcon.classList.remove('hidden');
+      mobileDarkIcon.classList.add('hidden');
+      mobileLightIcon.classList.remove('hidden');
+    }
+
+    function toggleTheme() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        darkIcon.classList.remove('hidden');
+        lightIcon.classList.add('hidden');
+        mobileDarkIcon.classList.remove('hidden');
+        mobileLightIcon.classList.add('hidden');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        darkIcon.classList.add('hidden');
+        lightIcon.classList.remove('hidden');
+        mobileDarkIcon.classList.add('hidden');
+        mobileLightIcon.classList.remove('hidden');
+      }
+    }
+
+    themeToggleBtn.addEventListener('click', toggleTheme);
+    mobileThemeToggleBtn.addEventListener('click', toggleTheme);
+  </script>
+</body>
+</html>
