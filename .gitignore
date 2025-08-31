@@ -1,0 +1,11 @@
+# Build
+dist/
+node_modules/
+
+# Sistema
+.DS_Store
+*.log
+
+# Env
+.env
+

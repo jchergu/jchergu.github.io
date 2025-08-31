@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for social icons */
+.social-icon {
+  @apply w-8 h-8 transition-all duration-300;
+}
+
+/* Dark mode styles */
+.dark .social-icon {
+  @apply invert brightness-100;
+}

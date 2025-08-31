@@ -41,3 +41,7 @@ But I'm still thinking about how to apply the CSS before doing disasters, there 
 
 ### After the holidays
 In this period, I've learned a little bit about Tailwind CSS and used it in `index.html`. My decision is to first decide some style of the home page and then complete the other sections: music, portfolio, blog, about.
+
+### The structure
+In this period the website is not changing aestetically, but I'm organizing the internal structure of files.  
+For instance, the topbar and the buttons are elements that easily can appear in every page, but writing everytime the HTML for these components sounds like *boilerplate code*. So I separated them in a folder called `partials`, and pages like `index.html` can "load" some HTML parts. In the mean time, I developed also a "Work In Progress" page because the 404 was not so funny.
