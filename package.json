@@ -4,7 +4,9 @@
   "description": "For all the informations about Jacopo, check the [website](https://jchergu.github.io).   For all the infos about the project, visit [log.md](./log.md)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "build:css": "postcss src/styles/input.css -o dist/output.css",
+      "watch:css": "postcss src/styles/input.css -o dist/output.css --watch"
   },
   "repository": {
     "type": "git",
