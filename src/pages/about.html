@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Who is Jacopo? 🙇</title>
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="/public/js/include-partials.js" defer></script>
 </head>
-<body>
-  <h1>Coming soon</h1>
-  
+
+<body class="bg-primary-dark text-primary-white transition-colors duration-300">
+
+  <!-- Toolbar -->
+  <div data-include="/src/partials/toolbar.html"></div>
+
+  <!-- Content -->
+  <main class="container mx-auto p-8 max-w-3xl">
+
+    <h1 class="text-4xl font-bold mb-8 text-center">
+      Who is Jacopo? 🙇
+    </h1>
+
+    <div class="space-y-6 text-lg leading-relaxed">
+
+      <p>
+        Hi, I'm Jacopo :)
+        a 24-year-old Computer Engineering MSc student based in Bologna.
+      </p>
+
+      <p>
+        I want to build systems that actually do something, not just slides and buzzwords.
+        My focus is on <b>cloud systems, distributed architectures, and AI</b>.
+      </p>
+
+      <p>
+        What really drives me is <b>music + technology</b>:
+        making computers process, understand, and interact with sound.
+      </p>
+
+      <p>
+        I've worked on things like:
+      </p>
+
+      <ul class="list-disc list-inside space-y-2">
+        <li>Real-time audio processing in C++ (low latency, high performance)</li>
+        <li>Semantic search systems using embeddings and vector databases</li>
+        <li>Edge-cloud architectures with AI models</li>
+        <li>Distributed systems with Docker & Kubernetes</li>
+      </ul>
+
+      <p>
+        I also work as an IT support assistant, helping non-technical people
+        deal with digital tools, which taught me that <i>if people can't use what you build, it's useless.</i>
+      </p>
+
+      <p>
+        Outside tech, I produce music, play guitar/bass/keys,
+        and try to stay alive by swimming.
+      </p>
+
+      <p>
+        I'm looking for opportunities to build meaningful systems,
+        learn fast, and work on things that actually matter.
+      </p>
+
+      <p class="pt-4">
+        📬 joppone@proton.me <br>
+        📍 Bologna / open to relocation
+      </p>
+
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center mt-12" data-include="/src/partials/social-icons.html"></div>
+
+  </main>
+
 </body>
 </html>
