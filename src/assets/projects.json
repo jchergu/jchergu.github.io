@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "title": "EQ & Reverb Engine (C++)",
+      "description": "Real-time audio effects engine with SIMD and OpenMP optimizations, achieving 5x faster processing via IIR filters and CUDA exploration.",
+      "github_link": "https://github.com/jchergu/embeddedSystems"
+    },
+    {
+      "title": "Music Lyrics Similarity Search System (Py)",
+      "description": "Semantic search for music lyrics using embeddings and FAISS, 10x faster than traditional file systems, with Docker containerization.",
+      "github_link": "https://github.com/jchergu/LS3"
+    },
+    {
+      "title": "Industrial Cargo Service (Qak/Kotlin)",
+      "description": "Microservices-based automated cargo system with DDR robot GUI, orchestrated via Docker Compose and SCRUM methodology.",
+      "github_link": "https://github.com/unibonicolovenieri/cargoservice"
+    },
+    {
+      "title": "Earthquake Detection Edge-Cloud System (Py)",
+      "description": "AI-powered edge-cloud system for earthquake damage detection using ESP32 and Detectron2, aiding disaster response.",
+      "github_link": "https://github.com/jchergu/EartquakeDetection"
+    },
+    {
+      "title": "Music Data Mining & Feature Analysis (Py)",
+      "description": "Data mining on music datasets with association rules, clustering, and Random Forest for uncovering musical patterns.",
+      "github_link": "https://github.com/jchergu/marm"
+    },
+    {
+      "title": "Distributed Music Synchronization (Java)",
+      "description": "Synchronized distributed music playback with Java clients, Docker, and Kubernetes, optimized for low latency.",
+      "github_link": "https://github.com/jchergu/EdgeMusicSync"
+    }
+  ]
+}

@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jacopo's portfolio 📁</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="/public/js/include-partials.js" defer></script>
+  <script src="/public/js/projects.js" defer></script>
 </head>
-<body>
-  <h1>Coming soon</h1>
+
+<body class="bg-primary-dark text-primary-white transition-colors duration-300">
+
+  <!-- Toolbar -->
+  <div data-include="/src/partials/toolbar.html"></div>
+
+  <!-- Content -->
+  <main class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold mb-8 text-center">
+      My Projects 📁
+    </h1>
+
+    <section
+      id="projects-container"
+      class="grid grid-cols-1 md:grid-cols-2 gap-8"
+    >
+      <!-- Projects injected here -->
+    </section>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center mt-12" data-include="/src/partials/social-icons.html"></div>
+
+  </main>
+
   
+
 </body>
 </html>
