@@ -27,7 +27,7 @@ fetch("/src/assets/music.json")
             : ""
         }
 
-        <p class="mb-4 text-base">
+        <p class="mb-4 text-base whitespace-pre-line">
           ${song.description}
         </p>
 
