@@ -7,6 +7,7 @@ fetch("/src/assets/projects.json")
       const card = document.createElement("div");
 
       card.className = `
+        group
         border border-primary
         rounded-xl
         p-4
@@ -28,7 +29,7 @@ fetch("/src/assets/projects.json")
         <a
           href="${project.github_link}"
           target="_blank"
-          class="inline-block bg-primary text-black px-4 py-2 rounded-lg hover:bg-primary-dark transition duration-300"
+          class="inline-block bg-primary text-black px-4 py-2 rounded-lg transition duration-300 group-hover:bg-primary-dark group-hover:text-primary-white hover:bg-primary-dark hover:text-primary-white hover:scale-105"
         >
           View on GitHub
         </a>
