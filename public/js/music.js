@@ -23,11 +23,11 @@ fetch("/src/assets/music.json")
 
         ${
           song.translation
-            ? `<h3 class="text-sm italic opacity-80 mb-2">${song.translation}</h3>`
+            ? `<h3 class="text-base italic opacity-80 mb-2">${song.translation}</h3>`
             : ""
         }
 
-        <p class="mb-4 text-sm">
+        <p class="mb-4 text-base">
           ${song.description}
         </p>
 

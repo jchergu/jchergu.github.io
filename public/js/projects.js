@@ -22,7 +22,7 @@ fetch("/src/assets/projects.json")
           ${project.title}
         </h2>
 
-        <p class="mb-4 text-sm">
+        <p class="mb-4 text-base">
           ${project.description}
         </p>
 
