@@ -21,9 +21,9 @@
       "github_link": "https://github.com/jchergu/EartquakeDetection"
     },
     {
-      "title": "Music Data Mining & Feature Analysis (Py)",
-      "description": "Data mining on music datasets with association rules, clustering, and Random Forest for uncovering musical patterns.",
-      "github_link": "https://github.com/jchergu/marm"
+      "title": "Context-Aware Multimodal Music Pipeline (Py)",
+      "description": "Kappa-style streaming/batch pipeline for music semantic enrichment and recommendation, with CLAP embeddings, Milvus vector search, and a Neo4j knowledge graph.",
+      "github_link": "https://github.com/jchergu/semantic-music-pipeline"
     },
     {
       "title": "Distributed Music Synchronization (Java)",
